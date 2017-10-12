@@ -7,6 +7,8 @@
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link href="~/lib/material-kit/assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/lib/material-kit/assets/css/material-kit.css" rel="stylesheet" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment exclude="Development">
@@ -17,8 +19,8 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
+    <nav class="navbar navbar-primary">
+        <div class="container" >
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
@@ -37,7 +39,7 @@
             </div>
         </div>
     </nav>
-    <div class="container body-content">
+    <div class="container main main-raised">
         @RenderBody()
         <hr />
         <footer>
@@ -48,6 +50,9 @@
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/lib/material-kit/assets/js/material.min.js"></script>
+        <script src="~/lib/material-kit/assets/js/material-kit.js"></script>
+        <script src="~/lib/material-kit/assets/js/nouislider.min.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment exclude="Development">
