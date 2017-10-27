@@ -1,6 +1,24 @@
-﻿body {
+﻿@font-face {
+    font-family: 'diodrumarabic-bold';
+    src: url('../fonts/diodrumarabic-bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'diodrumarabic-light';
+    src: url('../fonts/diodrumarabic-light.woff') format('woff');
+}
+@font-face {
+    font-family: 'diodrumarabic-medium';
+    src: url('../fonts/diodrumarabic-medium.woff') format('woff');
+}
+body {
+    font-family: 'diodrumarabic-bold';
+    font-family: 'diodrumarabic-light';
     padding-top: 50px;
     padding-bottom: 20px;
+}
+.navbar {
+    font-family: 'diodrumarabic-medium';
+    font-size: 22px;
 }
 
 /* Wrapping element */

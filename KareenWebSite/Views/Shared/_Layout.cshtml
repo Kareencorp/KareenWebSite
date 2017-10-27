@@ -7,7 +7,8 @@
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
-        <link href="~/lib/material-kit/assets/css/bootstrap.min.css" rel="stylesheet" />
+              <link href="~/lib/material-kit/assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.full.min.css" rel="stylesheet" />
         <link href="~/lib/material-kit/assets/css/material-kit.css" rel="stylesheet" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
@@ -19,7 +20,7 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-primary">
+    <nav class="navbar navbar-info navbar-fixed-top">
         <div class="container" >
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -28,23 +29,28 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">KareenWebSite</a>
+                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">کـــــاریـن</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">خانه</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">درباره</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">تماس</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container main main-raised">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2017 - KareenWebSite</p>
-        </footer>
+    <div class="main main-raised">
+        <div class="container" style="padding-top:160px">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; 2017 - KareenWebSite</p>
+            </footer>
+
+        </div>
+        
+        
     </div>
 
     <environment include="Development">
